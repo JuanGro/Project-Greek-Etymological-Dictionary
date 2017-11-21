@@ -11,6 +11,14 @@
   (get_prefixes_meaning word)
   (get_suffixes_meaning word))
 
+#| See all the dictionary |#
+(define (complete-dictionary)
+  (fill_root_dictionary roots)
+  (fill_prefix_dictionary prefixes)
+  (fill_suffix_dictionary suffixes)
+  (print_dictionary_in_friendly_format roots)
+  (print_dictionary_in_friendly_format prefixes)
+  (print_dictionary_in_friendly_format suffixes))
 
 #| ##### |#
 #| Roots |#
@@ -1169,11 +1177,6 @@
          (printf "~a. " value))
        (printf "\n")]))
   (printf "\n"))
-
-#| Know if the key has to be searched at the beginning, end or middle of the word |#
-(define (word-type word)
-  (cond
-    [(string-contains? word "-") (printf "contains")]))
 
 #| Return if the word contains as prefix one of the spanish patrons for this etymology |#
 (define (spanish-patrons-prefix dictionary key word)
