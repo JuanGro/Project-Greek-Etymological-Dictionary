@@ -11,7 +11,6 @@
   (get_prefixes_meaning word)
   (get_suffixes_meaning word))
 
-
 #| ##### |#
 #| Roots |#
 #| ##### |#
@@ -894,8 +893,8 @@
   ;; Remove the keys that are contained by other
   (remove_keys_contained_in_other_key roots)
   ;; Show the roots that fits
-  (print_dictionary_in_friendly_format roots))
-
+  (print_dictionary_in_friendly_format roots)
+)
 
 #| ######## |#
 #| Prefixes |#
@@ -1013,8 +1012,8 @@
   ;; Guarantee that is not repeated some key from root
   (remove_keys_contained_in_other_key_different_dictionary roots prefixes)
   ;; Show the prefixes that fits
-  (print_dictionary_in_friendly_format prefixes))
-
+  (print_dictionary_in_friendly_format prefixes)
+)
 
 #| ######## |#
 #| Suffixes |#
@@ -1116,8 +1115,8 @@
   ;; Guarantee that is not repeated some key from root
   (remove_keys_contained_in_other_key_different_dictionary roots suffixes)
   ;; Show the prefixes that fits
-  (print_dictionary_in_friendly_format suffixes))
-
+  (print_dictionary_in_friendly_format suffixes)
+)
 
 #| ############## |#
 #| Common methods |#
@@ -1133,7 +1132,6 @@
 (define (get_keys_to_remove dictionary word)
   (filter (lambda (key) (not(contains-true (spanish-patrons dictionary key word)))) (dict-keys dictionary)))
 
-#| Get correct patron depending on the key |#
 (define (spanish-patrons dictionary key word)
   (cond
     [(string-suffix? key "-") (spanish-patrons-prefix dictionary key word)]
