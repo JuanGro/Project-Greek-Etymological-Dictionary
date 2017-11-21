@@ -1,8 +1,0 @@
-#lang racket
-
-#| Define the rules for the prefixes |#
-;; Create the dictionary
-(define prefixes (make-hash))
-
-(define (fill_prefix_dictionary dictionary_name)
-  (dict-set! dictionary_name "acro-" #(("greek-root" "akpos") ("meaning" (cons "altura" "extremo")) ("spanish-patrons" (cons "acro" "acra")))))

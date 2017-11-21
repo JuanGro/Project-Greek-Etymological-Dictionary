@@ -64,7 +64,7 @@
   (dict-set! dictionary_name "andro"
              #hash(("greek-root" . "ἀνδρός")
                    ("meaning" . ("Varón"))
-                   ("spanish-patrons" . ("andra" "andro" "andria"))))
+                   ("spanish-patrons" . ("andra" "andro" "andró" "andria"))))
   (dict-set! dictionary_name "anemo"
              #hash(("greek-root" . "ἄνεμος")
                    ("meaning" . ("Viento"))
@@ -453,10 +453,6 @@
              #hash(("greek-root" . "ἰχθύς")
                    ("meaning" . ("Pez" "Pescado"))
                    ("spanish-patrons" . ("icti"))))
-  (dict-set! dictionary_name "-itis"
-             #hash(("greek-root" . "ῖτις")
-                   ("meaning" . ("Inflación"))
-                   ("spanish-patrons" . ("itis"))))
   (dict-set! dictionary_name "kilo-"
              #hash(("greek-root" . "χιλιοι-")
                    ("meaning" . ("Mil"))
@@ -525,10 +521,6 @@
              #hash(("greek-root" . "μεσος")
                    ("meaning" . ("En medio" "Entre"))
                    ("spanish-patrons" . ("meso"))))
-  (dict-set! dictionary_name "metá-"
-             #hash(("greek-root" . "μετα")
-                   ("meaning" . ("Después de" "Junto a"))
-                   ("spanish-patrons" . ("meta" "metá"))))
   (dict-set! dictionary_name "-metro"
              #hash(("greek-root" . "μέτρον")
                    ("meaning" . ("Medida" "Instrumento para medir"))
@@ -941,7 +933,7 @@
   (dict-set! dictionary_name "cata-"
              #hash(("greek-root" . "κατὰ")
                    ("meaning" . ("Sobre" "Hacia abajo" "Enteramente"))
-                   ("spanish-patrons" . ("cata" "catá"))))
+                   ("spanish-patrons" . ("cata" "catá" "cató"))))
   (dict-set! dictionary_name "di-"
              #hash(("greek-root" . "δί-")
                    ("meaning" . ("Dos"))
